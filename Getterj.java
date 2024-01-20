@@ -1,0 +1,74 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Sprintj;
+
+import java.util.Iterator;
+import java.util.List;
+
+/**
+ *
+ * @author m
+ */
+public class Getterj {
+    private String city;
+    private String country;
+    private List<listgetter> list1;
+
+    /**
+     * @return the city
+     */
+    public String getCity() {
+        return city;
+    }
+
+    /**
+     * @param city the city to set
+     */
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    /**
+     * @return the country
+     */
+    public String getCountry() {
+        return country;
+    }
+
+    /**
+     * @param country the country to set
+     */
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    /**
+     * @return the list1
+     */
+    public List<listgetter> getList1() {
+        return list1;
+    }
+
+    /**
+     * @param list1 the list1 to set
+     */
+    public void setList1(List<listgetter> list1) {
+        this.list1 = list1;
+    }
+
+    
+ void show(){
+        System.err.println(city+country);
+      Iterator<listgetter> itr=list1.iterator();  
+	    while(itr.hasNext()){  
+                System.err.println("hghggh");
+        System.out.println(itr.next());  
+	    }  
+
+    }
+
+    
+}
