@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+    <bean id="ds" class="Springj.Getterj">
+        <property name="name" value="dom"></property>
+        <property name="place" value="kerala"></property>
+        <property name="map">
+            <map>
+                <entry key-ref="e1" value-ref="usee1"></entry>
+                <entry key-ref="e2" value-ref="usee2"></entry>
+            </map>
+        </property>
+    </bean>
+    <bean id="e1" class="Springj.usergetter">
+        <property name="city" value="TSR"></property>
+        <property name="country" value="IND"></property>
+    </bean>
+    <bean id="e2" class="Springj.usergetter">
+        <property name="city" value="TVM"></property>
+        <property name="country" value="IND"></property>
+    </bean>
+    <bean id="usee1" class="Springj.uusergetter">
+        <property name="street" value="snr"></property>
+        <property name="landmark" value="railway"></property>
+    </bean>
+    <bean id="usee2" class="Springj.uusergetter">
+        <property name="street" value="palam"></property>
+        <property name="landmark" value="market"></property>
+    </bean>
+</beans>
